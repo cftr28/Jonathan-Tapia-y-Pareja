@@ -421,18 +421,46 @@
     
     .boton-llegar, .boton-confirmar, .boton-pdf { max-width:90%!important; }
     /* Ajuste para que los nombres dentro de la tarjeta se vean limpios */
+/* Esto asegura que los nombres dentro de la tarjeta se centren */
 .card p {
-    margin: 5px 0 !important;
-    font-size: 1.1rem !important;
-    color: #6d6d6d !important;
+    text-align: center !important;
+    margin: 5px 0 !important; /* Controla el espacio entre nombres */
+    line-height: 1.4 !important;
 }
 
-.card .rol {
-    margin-top: 20px !important;
-    font-weight: bold !important;
-    font-size: 0.9rem !important;
-    color: #999 !important;
+/* Ajuste específico para el contenedor de la tarjeta */
+.card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
 }
+
+/* Para que NOVIA/NOVIO no tengan margen extra */
+.rol {
+    margin-top: 15px !important;
+    margin-bottom: 5px !important;
+    font-weight: bold !important;
+}
+/* 1. Estilo de letra para los novios */
+    .nombres {
+        font-family: 'Dancing Script', cursive !important; /* Asegúrate de tener esta fuente importada */
+        font-size: 3rem !important; 
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
+        color: #555 !important; /* Ajusta este color al gris de la foto */
+    }
+
+    /* 2. Ajuste de la foto principal para que no sea tan larga */
+    .foto-boda {
+        width: 85% !important; 
+        max-width: 300px !important;
+        height: 250px !important; /* Controla la altura fija para que no sea tan larga */
+        object-fit: cover !important; /* Esto evita que la foto se estire o se vea rara */
+        border: 6px solid white !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,.15) !important;
+        margin: 10px auto 25px auto !important;
+    }
 }
 
 
