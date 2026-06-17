@@ -361,15 +361,65 @@
 /* ==============================
    CELULARES
    ============================== */
-@media (max-width:768px){ html,body{ width:100%; min-height:100%; overflow-x:hidden; } body { background: transparent !important; margin:0 !important; padding:50px 0 20px 0 !important; position:relative; } body::before{ content:""; position:fixed; top:0; left:0; width:100%; height:100vh; background-image:url('fotofondo.jpg'); background-size:100% auto; background-position:center top; background-repeat:no-repeat; z-index:-1; } .boton-play { 
+@media (max-width:768px){ 
+    html, body { width:100%; min-height:100%; overflow-x:hidden; } 
+    
+    body { 
+        background: transparent !important; 
+        margin:0 !important; 
+        padding:70px 0 20px 0 !important; 
+        position:relative; 
+    } 
+    
+    body::before { 
+        content:""; 
+        position:fixed; top:0; left:0; width:100%; height:100vh; 
+        background-image:url('fotofondo.jpg'); 
+        background-size:100% auto; 
+        background-position:center top; 
+        background-repeat:no-repeat; 
+        z-index:-1; 
+    } 
+
+    /* ESTA ES LA ÚNICA REGLA PARA .boton-play */
+    .boton-play { 
         display: flex !important;
         flex-direction: column !important; 
         align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 20px auto 25px auto !important;
         gap: 5px !important;
-        margin-top: 0px !important; 
-        margin-bottom: 25px !important; 
-    } section, .container, .contenedor-tarjetas, .contenedor-cards { background:transparent !important; } .container{ width:100%!important; max-width:100%!important; padding:0!important; } /* tarjetas generales */ .contenedor-cards, .contenedor-tarjetas{ flex-direction:column!important; align-items:center!important; gap:20px!important; padding:15px 0!important; } .card, .tarjeta-evento, .card-final, .card-pases{ width:88%!important; max-width:500px!important; margin-left:auto!important; margin-right:auto!important; box-sizing:border-box!important; } /* portada */ .boton-play{ margin-top:20px!important; margin-bottom:25px!important; } .circulo-play{ width:45px!important; height:45px!important; } .texto-play{ font-size:1.3rem!important; } .nombres{ font-size:2.8rem!important; line-height:1.1!important; margin-bottom:15px!important; } .fecha{ font-size:1.1rem!important; margin-bottom:20px!important; } .foto-boda{ width:75%!important; max-width:260px!important; height:auto!important; border:6px solid white!important; box-shadow:0 5px 15px rgba(0,0,0,.15)!important; margin:10px auto 25px auto!important; } /* fotos dobles */ .contenedor-dos-fotos{ flex-direction:column!important; width:100%!important; gap:15px!important; padding:0!important; } .foto-boda-doble{ width:75%!important; max-width:240px!important; } /* textos */ .frase-boda{ font-size:1.8rem!important; } .titulo-tarjeta, .titulo-card{ font-size:2rem!important; } /* contador */ .contador-container{ gap:5px!important; } .bloque{ width:65px!important; } .numero{ font-size:1.5rem!important; padding:12px 4px!important; } /* botones */ .boton-llegar, .boton-confirmar, .boton-pdf{ max-width:90%!important; }
+        background: none !important;
+        border: none !important;
+    }
 
+    section, .container, .contenedor-tarjetas, .contenedor-cards { background:transparent !important; } 
+    .container { width:100%!important; max-width:100%!important; padding:0!important; } 
+    
+    .contenedor-cards, .contenedor-tarjetas { flex-direction:column!important; align-items:center!important; gap:20px!important; padding:15px 0!important; } 
+    
+    .card, .tarjeta-evento, .card-final, .card-pases { width:88%!important; max-width:500px!important; margin-left:auto!important; margin-right:auto!important; box-sizing:border-box!important; } 
+
+    .circulo-play { width:45px!important; height:45px!important; } 
+    .texto-play { font-size:1.3rem!important; display: block !important; } 
+    
+    .nombres { font-size:2.8rem!important; line-height:1.1!important; margin-bottom:15px!important; } 
+    .fecha { font-size:1.1rem!important; margin-bottom:20px!important; } 
+    
+    .foto-boda { width:75%!important; max-width:260px!important; height:auto!important; border:6px solid white!important; box-shadow:0 5px 15px rgba(0,0,0,.15)!important; margin:10px auto 25px auto!important; } 
+    
+    .contenedor-dos-fotos { flex-direction:column!important; width:100%!important; gap:15px!important; padding:0!important; } 
+    .foto-boda-doble { width:75%!important; max-width:240px!important; } 
+    
+    .frase-boda { font-size:1.8rem!important; } 
+    .titulo-tarjeta, .titulo-card { font-size:2rem!important; } 
+    
+    .contador-container { gap:5px!important; } 
+    .bloque { width:65px!important; } 
+    .numero { font-size:1.5rem!important; padding:12px 4px!important; } 
+    
+    .boton-llegar, .boton-confirmar, .boton-pdf { max-width:90%!important; }
 }
 
 
